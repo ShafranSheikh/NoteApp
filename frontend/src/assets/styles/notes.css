@@ -14,7 +14,7 @@
     height: 40vh;
     border: 2px solid ;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -24,6 +24,7 @@
     border: 2px solid;
     display: flex;
     flex-direction: column;
+    
 }
 .note-input-container-secondary input{
     width: 100%;
@@ -37,4 +38,11 @@
     resize: none;
     padding: 30px;
     font-size: 18px;
+}
+
+.note-input-container-main .add-button{
+    height: 50px;
+    width: 200px;
+    border: 2px solid;
+    margin-top: 20px;
 }

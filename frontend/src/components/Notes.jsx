@@ -43,7 +43,7 @@ return (
                     <input type="title" name="title" id="title" placeholder='title' value={title} onChange={(e)=>setTitle(e.target.value)}/>
                     <textarea name="note" id="note" placeholder='note' value={note} onChange={(e)=>setNote(e.target.value)} />
                 </div>
-                <button type="submit">Add</button>
+                <button className='add-button' type="submit">Add</button>
             </form>
         </div>
         {allNotes.length >0 ? (
