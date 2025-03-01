@@ -1,0 +1,33 @@
+.navbar{
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background: none;
+}
+.navbar .nav-logo{
+    height: 4rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+}
+.navbar .nav-logo img{
+    height: 100%;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navbar ul li{
+    color: #E9762B;
+    font-size: 18px;
+}
+.navbar ul li span{
+    color: #1D1616;
+}

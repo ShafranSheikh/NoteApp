@@ -33,4 +33,25 @@ router.get('/display', async (req,res)=>{
     }
 });
 
+router.delete('/delete/:id', async(req,res)=>{
+    try{
+        await NoteSchema.findByIdAndDelete(req.params.id);
+        res.status(200).json({message: 'Note Deleted Successfully'});
+    }catch(error){
+        console.error('Error Deleting Note.',error);
+        res.status(500).json({error: 'Failed to delete note'});
+    }
+});
+
+
+router.put('/update/:id', async(req,res)=>{
+    const {title, note} = req.body;
+    try{
+        await NoteSchema.findByIdAndUpdate(req.params.id,{title,note});
+        res.status(200).json({ message: 'Note Updated successfully' });
+    }catch(error){
+        console.error('Error Updating note', error);
+        res.status(500).json({ error: 'Failed to update note' });
+    }
+})
 export default router;

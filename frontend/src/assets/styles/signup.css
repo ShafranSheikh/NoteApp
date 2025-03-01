@@ -1,0 +1,82 @@
+.signup-form-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-form{
+    height: 650px;
+    width: 500px;
+    box-shadow: 2px 2px 20px #aaaaaa;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.signup-form .signup-header-container{
+    height: 10%;
+}
+.signup-form .signup-input-container{
+    height: 90%;
+    background-color: #F4F8D3;
+    box-shadow: 2px 2px 20px #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px;
+}
+.signup-form .signup-input-container .inputs,
+.signup-form .signup-input-container .input-submit{
+    height: 90px;
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom:10px ;
+    align-items: center;
+    padding: 10px;
+}
+.signup-form .signup-input-container .input-submit{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signup-form .signup-input-container .inputs label,
+.signup-form .signup-input-container .inputs input{
+    font-size: 18px;
+    font-weight: 500;
+}
+.signup-form .signup-input-container .inputs input{
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.signup-form .signup-input-container .input-submit button{
+    height: 90%;
+    width: 100%;
+    font-size: 18px;
+    background-color: #3B6790;
+    border-radius: 10px;
+    color: #f8f7f5;
+}
+.signup-form .signup-input-container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-weight: 500;
+}
+.signup-form .signup-input-container  span{
+    text-decoration: underline;
+    color: #EFB036;
+    cursor: pointer;
+    font-weight: 700;
+}
+.custom-link {
+    color: inherit; /* Inherit the color of the parent */
+    text-decoration: none; /* Remove underline */
+}
+
+.custom-link:hover {
+    color: #555; /* Optional: Add a hover effect */
+}
