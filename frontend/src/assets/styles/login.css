@@ -69,12 +69,12 @@
     font-weight: 700;
 }
 .custom-link {
-    color: inherit; /* Inherit the color of the parent */
-    text-decoration: none; /* Remove underline */
+    color: inherit; 
+    text-decoration: none; 
 }
 
 .custom-link:hover {
-    color: #555; /* Optional: Add a hover effect */
+    color: #555;
 }
 .login-google p{
     display: flex;

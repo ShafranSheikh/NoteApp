@@ -63,7 +63,7 @@ return (
             <form onSubmit={handleFormSubmit}>
                 <div className="note-input-container-secondary">
                     <h1><input type="text" name="title" id="title" placeholder='Title' value={title} onChange={(e)=>setTitle(e.target.value)}/></h1>
-                    <textarea name="note" id="note" placeholder='note' value={note} onChange={(e)=>setNote(e.target.value)} />
+                    <textarea name="note" id="note" placeholder='note' value={note} onChange={(e)=>setNote(e.target.value)} maxLength="270" />
                 </div>
                 <button className='add-button' type="submit">{updateId ? 'Update': 'Add'}</button>
             </form>

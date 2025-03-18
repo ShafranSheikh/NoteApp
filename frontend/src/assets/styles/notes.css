@@ -49,6 +49,7 @@
     margin-top: 20px;
     background: none;
     box-shadow: 2px 2px 20px #aaaaaa;
+    font-size: 16px;
 }
 .note-disaply-container-main{
     min-height: 70vh;
@@ -61,22 +62,22 @@
 }
 
 .note-display-container-secondary{
-    height: 250px;
+    height: 260px;
     width: 400px;
     box-shadow: 2px 2px 20px #aaaaaa;
     overflow: hidden;
     border-radius: 10px;
 }
 .note-display-container-secondary .title-container{
-    height: 20%;
+    height: 52px;
     background-color: #FFB433;
 }
 .note-display-container-secondary .notes-container{
-    height: 60%;
+    height: 156px;
 }
 
 .note-display-container-secondary .functionality-container{
-    height: 20%;
+    height: 52px;
     display: flex;
     flex-direction: row;
     gap: 10px;

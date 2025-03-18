@@ -3,6 +3,7 @@ import NoteSchema from '../models/NoteSchema.js';
 
 const router = express.Router();
 
+//Route for adding new List
 router.post('/add', async (req,res)=>{
     const {title, note} = req.body;
     try{
@@ -18,6 +19,7 @@ router.post('/add', async (req,res)=>{
     };
 });
 
+//Route to Display all the available Notes
 router.get('/display', async (req,res)=>{
     try{
         const notes = await NoteSchema.find({});
@@ -33,6 +35,8 @@ router.get('/display', async (req,res)=>{
     }
 });
 
+
+//Route to delete note
 router.delete('/delete/:id', async(req,res)=>{
     try{
         await NoteSchema.findByIdAndDelete(req.params.id);
@@ -43,7 +47,7 @@ router.delete('/delete/:id', async(req,res)=>{
     }
 });
 
-
+//Route to update a note
 router.put('/update/:id', async(req,res)=>{
     const {title, note} = req.body;
     try{
